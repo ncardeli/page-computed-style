@@ -1,6 +1,6 @@
 {
   "name": "page-computed-style",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI to output the computed style of all the elements of a page.",
   "main": "index.js",
   "scripts": {
