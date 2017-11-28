@@ -1,6 +1,6 @@
 # page-computed-style
 
-A CLI to output the computed style of a all the elements of a page.
+A CLI to output the computed style of all the elements of a page.
 
 ## Prerequisites
 
