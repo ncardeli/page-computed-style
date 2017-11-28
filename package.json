@@ -1,0 +1,23 @@
+{
+  "name": "page-computed-style",
+  "version": "1.0.0",
+  "description": "A CLI to output the computed style of a all the elements of a page.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ncardeli@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "cli": "^1.0.1",
+    "phantomjs-prebuilt": "^2.1.14"
+  },
+  "bin": {
+    "page-computed-style": "index.js"
+  },
+  "engines": {
+    "node": ">=6.10.0",
+    "npm": ">= 3.0.0"
+  }
+}
