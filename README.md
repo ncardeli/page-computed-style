@@ -51,7 +51,7 @@ page-computed-style -h
 
 ## Built With
 
-* [PhantomJS](http://http://phantomjs.org/)
+* [PhantomJS](http://phantomjs.org/)
 
 ## License
 
