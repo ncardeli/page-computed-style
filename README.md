@@ -49,16 +49,6 @@ For help and more options, type:
 page-computed-style -h
 ```
 
-## Installing & Using Locally
-
-If you would rather installing the package locally, omit `-g` parameter and the usage will be directly from `node_modules/page-computed-style/index.js`:
-
-```
-node ./node_modules/page-computed-style/index.js -p http://path/to/page
-```
-
-Other options also apply for local installation.
-
 ## Built With
 
 * [PhantomJS](http://phantomjs.org/)
