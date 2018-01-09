@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 const cli = require('cli');
 const phantomjs = require('phantomjs-prebuilt');
+const path = require('path');
 const options = cli.parse({
   "page": ["p", "The page whose computed style CSS file will be generated.", "string", ""],
   "output": ["o", "Path of the output CSS file (optional). If no output file is especified, the result is written to the standard output.", "string", ""],
@@ -10,7 +11,9 @@ const options = cli.parse({
 });
 
 if (options.page) {
-  let program = phantomjs.exec('serializer.js', options.page, options.wait, options.output, options.verbose, options.htmloutput);
+  let serializer_script = path.resolve(__dirname, 'serializer.js');
+  let program = phantomjs.exec(serializer_script, options.page, options.wait, options.output, options.verbose, options.htmloutput);
+
   program.stdout.pipe(process.stdout);
   program.stderr.pipe(process.stderr);
   program.on('exit', code => {
